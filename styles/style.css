@@ -215,3 +215,21 @@ dialog:not([open]) {
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.75);
 }
+
+@media (width <= 375px) {
+    .main {
+        gap: 52.5px;
+    }
+
+    .save-button {
+        flex-direction: column;
+    }
+
+    .save__image {
+        --diskette-size: 28px;
+    }
+
+    .dialog {
+        padding: 30px 40px;
+    }
+}
