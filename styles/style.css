@@ -216,6 +216,38 @@ dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+.filter-bright-gray {
+    filter: brightness(120%) grayscale(0.6);
+}
+
+.filter-bright-hue {
+    filter: brightness(120%) hue-rotate(330deg);
+}
+
+.filter-sepia-light {
+    filter: sepia(60%);
+}
+
+.filter-hue-blue {
+    filter: hue-rotate(200deg);
+}
+
+.filter-invert-saturate {
+    filter: invert(1) saturate(120%);
+}
+
+.filter-sepia-strong {
+    filter: sepia(80%);
+}
+
+.filter-muted-gray {
+    filter: saturate(50%) grayscale(0.5);
+}
+
+.filter-bright-soft {
+    filter: saturate(150%) opacity(0.8);
+}
+
 @media (width <= 375px) {
     .main {
         gap: 52.5px;
