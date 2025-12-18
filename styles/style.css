@@ -167,3 +167,51 @@
     font-size: 14px;
     text-wrap: nowrap;
 }
+
+.dialog {
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+    padding: 30px 30px;
+    font-family: var(--accent-font);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+dialog:not([open]) {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dialog__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.dialog__image {
+    --diskette-size: 39px;
+    width: var(--diskette-size);
+    height: var(--diskette-size);
+}
+
+.dialog__text {
+    width: clamp(12.563rem, 11.836rem + 3.099vw, 14.625rem);
+}
+
+.dialog-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px clamp(7.281rem, 6.929rem + 1.502vw, 8.281rem);
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
+}
