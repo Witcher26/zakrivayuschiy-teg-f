@@ -216,6 +216,20 @@ dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+.main-buttons {
+    position: relative;
+    border: var(--border);
+    overflow: hidden;
+    background-color: #fff;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.main-buttons:focus-visible {
+    box-shadow: 2px 2px 0 0 var(--accent-color);
+    outline: none;
+}
+
 .filter-bright-gray {
     filter: brightness(120%) grayscale(0.6);
 }
