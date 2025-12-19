@@ -230,6 +230,13 @@ dialog::backdrop {
     outline: none;
 }
 
+.main-body {
+    transition: 0.3s linear;
+}
+.core {
+    transition: 0.3s linear 0.03s;
+}
+
 .filter-bright-gray {
     filter: brightness(120%) grayscale(0.6);
 }
