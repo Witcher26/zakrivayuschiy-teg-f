@@ -230,6 +230,33 @@ dialog::backdrop {
     outline: none;
 }
 
+.main-buttons:hover::before {
+  transform: translateX(0);
+}
+
+button span,
+.save__image {
+  position: relative;
+  z-index: 1;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.main-buttons::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: var(--accent-color);
+  transition: 0.5s ease-in-out;
+  transform: translateX(-100%);
+  transform-origin: left;
+}
+
 .main-body {
     transition: 0.3s linear;
 }
@@ -286,36 +313,36 @@ dialog::backdrop {
     transition: 0.3s linear 0.03s;
 }
 
-.filter-bright-gray {
+.filter__bright-gray {
     filter: brightness(120%) grayscale(0.6);
 }
 
-.filter-bright-hue {
-    filter: brightness(120%) hue-rotate(330deg);
+.filter__bright-hue {
+    filter: brightness(260%) hue-rotate(330deg);
 }
 
-.filter-sepia-light {
-    filter: sepia(60%);
+.filter__sepia-light {
+    filter: sepia(7%);
 }
 
-.filter-hue-blue {
-    filter: hue-rotate(200deg);
+.filter__hue-blue {
+    filter: hue-rotate(78deg);
 }
 
-.filter-invert-saturate {
+.filter__invert-saturate {
     filter: invert(1) saturate(120%);
 }
 
-.filter-sepia-strong {
-    filter: sepia(80%);
+.filter__sepia-strong {
+    filter: sepia(123%);
 }
 
-.filter-muted-gray {
-    filter: saturate(50%) grayscale(0.5);
+.filter__muted-gray {
+    filter: saturate(75%) grayscale(0.5);
 }
 
-.filter-bright-soft {
-    filter: saturate(150%) opacity(0.8);
+.filter__bright-soft {
+    filter: saturate(146%) opacity(0.8);
 }
 
 @media (width <= 375px) {
