@@ -14,4 +14,3 @@
 - Сохранить свои мысли и воспоминания.
 
 > _«Путь — это результат сам по себе».
-> <img width="700" height="8376" alt="Frame 25" src="https://github.com/user-attachments/assets/5ccf18f4-f667-418e-9ee9-e988d9cd88c6" />
